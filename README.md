@@ -15,10 +15,10 @@ Both work on a temporary copy, so your open document is never changed.
 
 ## Install
 
-1. Download this repository's files.
+1. Download the [Inkscape LightBurn Extensions ZIP](https://github.com/nicholas-a11y/Inkscape/raw/refs/heads/main/Inkscape-LightBurn-Extensions.zip) and extract it. It contains the two extension dialogs and their shared Python file.
 2. In Inkscape, open **Edit > Preferences > System**.
 3. Next to **User extensions**, click **Open**. This opens the right folder for your computer.
-4. Copy these three files into that folder:
+4. Copy the three extracted files into that folder:
    - `lightburn_export.inx`
    - `lightburn_save.inx`
    - `lightburn_export.py`
@@ -26,15 +26,16 @@ Both work on a temporary copy, so your open document is never changed.
 
 ## LightBurn colour palette (optional)
 
-`LightBurn_Layers.gpl` is an Inkscape palette with LightBurn's 30 layer colours (C00 to C29) plus the two tool layers (T1 and T2). Using these exact colours helps your strokes land on the layer you expect when the file is imported.
+The [LightBurn Layers Palette ZIP](https://github.com/nicholas-a11y/Inkscape/raw/refs/heads/main/LightBurn-Layers-Palette.zip) is optional. It contains `LightBurn_Layers.gpl`, an Inkscape palette with LightBurn's 30 layer colours (C00 to C29) plus the two tool layers (T1 and T2). Using these exact colours helps your strokes land on the layer you expect when the file is imported.
 
 To add it:
 
-1. In Inkscape, open **Edit > Preferences > System**.
-2. Next to **User palettes**, click **Open**.
-3. Copy `LightBurn_Layers.gpl` into that folder.
-4. Restart Inkscape.
-5. Open the palette list at the right-hand end of the palette bar along the bottom of the window (or in the Swatches dialog) and choose **LightBurn Layers**.
+1. Download and extract the ZIP.
+2. In Inkscape, open **Edit > Preferences > System**.
+3. Next to **User palettes**, click **Open**.
+4. Copy `LightBurn_Layers.gpl` into that folder.
+5. Restart Inkscape.
+6. Open the palette list at the right-hand end of the palette bar along the bottom of the window (or in the Swatches dialog) and choose **LightBurn Layers**.
 
 Click a colour to set the **fill**. Hold **Shift** and left-click a colour to set the **stroke**, which is the colour LightBurn normally uses to pick the layer for line work.
 
