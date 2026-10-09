@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+  <name>Save SVG</name>
+  <id>org.lightburn_helper.save_svg</id>
+  <param name="mode" type="string" gui-hidden="true">save</param>
+
+  <param name="selection_only" type="bool" gui-text="Selected objects only">false</param>
+  <param name="text_to_paths" type="bool" gui-text="Convert text (and shapes) to paths">true</param>
+  <param name="ungroup" type="bool" gui-text="Ungroup everything">false</param>
+
+  <param name="save_path" type="path" mode="file_new" filetypes="svg"
+         gui-text="Save as (blank = next to the drawing, '_lightburn' added):"></param>
+
+  <label>Sizes are measured on the path centre line. In Inkscape, set Edit &gt; Preferences &gt; Tools &gt; Bounding box to use: Geometric so the size you see matches what LightBurn imports.</label>
+
+  <effect needs-live-preview="false">
+    <object-type>all</object-type>
+    <effects-menu>
+      <submenu name="LightBurn"/>
+    </effects-menu>
+  </effect>
+  <script>
+    <command location="inx" interpreter="python">lightburn_export.py</command>
+  </script>
+</inkscape-extension>
