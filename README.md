@@ -73,7 +73,7 @@ Hold **Alt** (Windows) or **Option** (macOS) while clicking Send to see a step-b
 ## Things to know
 
 - **Sizes:** LightBurn measures the path centre line, but Inkscape can show sizes including the stroke width. Open **Edit > Preferences > Tools** on Windows, or **Inkscape > Settings > Preferences > Tools** on macOS, and set **Bounding box to use** to **Geometric** so the sizes you see match what LightBurn imports.
-- **Colours and layers:** LightBurn picks the layer from the stroke colour on import, so use its palette colours exactly. The extension cannot change which layer an object lands on. The REST API doesn't allow editing layer colours or the T1 and T2 tool layers.
+- **Colours and layers:** LightBurn matches a vector's stroke colour to the closest layer colour on import. To choose your layer colours intentionally, use the `LightBurn_Layers.gpl` palette.
 - **Clipping:** clipped objects can still show their hidden parts in LightBurn. Flatten clips in Inkscape first, for example with Path > Intersection.
 
 ## Files
