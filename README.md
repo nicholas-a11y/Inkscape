@@ -16,7 +16,7 @@ Both work on a temporary copy, so your open document is never changed.
 ## Install
 
 1. Download the [Inkscape LightBurn Extensions ZIP](https://github.com/nicholas-a11y/Inkscape/raw/refs/heads/main/Inkscape-LightBurn-Extensions.zip) and extract it. It contains the two extension dialogs and their shared Python file.
-2. In Inkscape, open **Edit > Preferences > System**.
+2. In Inkscape, open **Edit > Preferences > System** on Windows, or **Inkscape > Settings > Preferences > System** on macOS.
 3. Next to **User extensions**, click **Open**. This opens the right folder for your computer.
 4. Copy the three extracted files into that folder:
    - `lightburn_export.inx`
@@ -31,7 +31,7 @@ The [LightBurn Layers Palette ZIP](https://github.com/nicholas-a11y/Inkscape/raw
 To add it:
 
 1. Download and extract the ZIP.
-2. In Inkscape, open **Edit > Preferences > System**.
+2. In Inkscape, open **Edit > Preferences > System** on Windows, or **Inkscape > Settings > Preferences > System** on macOS.
 3. Next to **User palettes**, click **Open**.
 4. Copy `LightBurn_Layers.gpl` into that folder.
 5. Restart Inkscape.
@@ -72,7 +72,7 @@ Hold **Alt** (Windows) or **Option** (macOS) while clicking Send to see a step-b
 
 ## Things to know
 
-- **Sizes:** LightBurn measures the path centre line, but Inkscape can show sizes including the stroke width. In **Edit > Preferences > Tools**, set **Bounding box to use** to **Geometric** so the sizes you see match what LightBurn imports.
+- **Sizes:** LightBurn measures the path centre line, but Inkscape can show sizes including the stroke width. Open **Edit > Preferences > Tools** on Windows, or **Inkscape > Settings > Preferences > Tools** on macOS, and set **Bounding box to use** to **Geometric** so the sizes you see match what LightBurn imports.
 - **Colours and layers:** LightBurn picks the layer from the stroke colour on import, so use its palette colours exactly. The extension cannot change which layer an object lands on. The REST API doesn't allow editing layer colours or the T1 and T2 tool layers.
 - **Clipping:** clipped objects can still show their hidden parts in LightBurn. Flatten clips in Inkscape first, for example with Path > Intersection.
 
